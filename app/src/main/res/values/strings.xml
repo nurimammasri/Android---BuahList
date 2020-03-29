@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Buah List</string>
+    <string name="more">More</string>
+    <string name="favorite">favorite</string>
+    <string name="more_detail">More Detail</string>
+    <string name="deskripsi">Deskripsi</string>
+    <string name="rating">Rating</string>
+    <string name="sumber">Sumber</string>
+    <string name="url">URL</string>
+    <string name="nur_imam_masri">Nur Imam Masri</string>
+    <string name="nurimammasri_01_gmail_com">nurimammasri.01@gmail.com</string>
+</resources>

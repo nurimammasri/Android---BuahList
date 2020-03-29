@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/background"
+                    android:padding="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="6dp"
+                        android:layout_toEndOf="@id/image"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_item_namafruit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            tools:text="Nama Buah" />
+
+                        <com.codesgood.views.JustifiedTextView
+                            android:id="@+id/detail_more_fruit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:text="@string/more_detail" />
+
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="8dp">
+
+                        <ImageView
+                            android:id="@+id/image_buah"
+                            android:layout_width="170dp"
+                            android:layout_height="170dp"
+                            android:scaleType="fitXY" />
+
+                        <TextView
+                            android:id="@+id/rating"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/bg_rating"
+                            android:drawableRight="@drawable/ic_star_black_24dp"
+                            android:drawablePadding="5dp"
+                            android:gravity="center_horizontal|center_vertical"
+                            android:paddingHorizontal="8dp"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            tools:text="Rating" />
+
+                        <ImageView
+                            android:id="@+id/ic_favourite"
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="end|bottom"
+                            android:layout_margin="16dp"
+                            android:src="@drawable/ic_favorite_black_24dp" />
+
+
+                    </FrameLayout>
+
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp">
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+
+                        android:id="@+id/content_detail"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="@string/deskripsi" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        android:id="@+id/rate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:text="@string/rating"/>
+
+                    <androidx.appcompat.widget.AppCompatRatingBar
+                        android:id="@+id/penilaian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:numStars="5"
+                        android:rating="0"
+                        android:stepSize="0.5" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="@string/sumber" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/url" />
+                </TableRow>
+
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/deskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:justificationMode="inter_word"
+                tools:text="Deskripsi" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

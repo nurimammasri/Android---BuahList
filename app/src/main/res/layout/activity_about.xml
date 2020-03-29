@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".AboutActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="24dp"
+        android:gravity="top"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/img_about_foto"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:foregroundGravity="center"
+            android:src="@drawable/profile" />
+
+        <TextView
+            android:id="@+id/tv_about_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img_about_foto"
+            android:layout_marginBottom="8dp"
+            android:gravity="center"
+            android:text="@string/nur_imam_masri"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_about_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_about_nama"
+            android:gravity="center"
+            android:text="@string/nurimammasri_01_gmail_com"
+            android:textColor="@color/green01" />
+    </RelativeLayout>
+</ScrollView>
